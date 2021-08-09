@@ -1,3 +1,3 @@
 # SD-academy Project
 
-[![SD] (http://sd-academy.github.io)]
+[![SD](https://github-readme-stats.vercel.app/api?username=ashbeekim)(https://sd-academy.github.io)]
