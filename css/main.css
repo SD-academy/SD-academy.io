@@ -16,8 +16,8 @@
  *  09. header styles
  *  10. home
  *  11. about
- *  12. services
- *  13. portfolio
+ *  12. portfolio
+ *  13. presentation
  *  14. testimonials
  *  15. clients
  *  16. contact
@@ -1509,7 +1509,7 @@ header .header-logo a {
   width: 100%;
   height: 100%;
   background-color: #151515;
-  background-image: url(../images/hero-bg.jpg);
+  background-image: url(../images/bg_opt3.jpg);
   background-repeat: no-repeat;
   background-position: center 30%;
   -webkit-background-size: cover;
@@ -1518,6 +1518,7 @@ header .header-logo a {
   background-attachment: fixed;
   min-height: 804px;
   position: relative;
+  
 }
 #home .overlay {
   position: absolute;
@@ -1527,6 +1528,7 @@ header .header-logo a {
   height: 100%;
   opacity: .2;
   background-color: #19191b;
+  color: rgba(0,0,51,0.3);
 }
 
 .home-content-table {
@@ -1881,12 +1883,12 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 
 
 /* ===================================================================
- *  12. services - (_layout.scss)
- *
+ *  12. portfolio - (_layout.scss)
+ *  original-service -> edited-portfolio
  * ------------------------------------------------------------------- */
-#services {
-  background-color: #19191b;
-  background-image: url(../images/services-bg.jpg);
+#portfolio {
+  background-color: #151515;
+  background-image: url(../images/bg_opt1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
@@ -1897,7 +1899,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   padding: 15rem 0 15rem;
   color: rgba(255, 255, 255, 0.3);
 }
-#services .overlay {
+#portfolio .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1905,7 +1907,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   height: 100%;
   background-color: rgba(5, 5, 5, 0.7);
 }
-#services .gradient-overlay {
+#portfolio .gradient-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1917,102 +1919,6 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85) 0%, transparent 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9000000', endColorstr='#00000000',GradientType=0 );
 }
-#services .section-intro h3 {
-  color: rgba(242, 242, 242, 0.5);
-}
-#services .section-intro h1 {
-  color: #FFFFFF;
-}
-#services .section-intro .lead {
-  color: rgba(242, 242, 242, 0.4);
-}
-#services .services-content {
-  text-align: center;
-  max-width: 1040px;
-}
-#services .services-list {
-  margin-top: 1.2rem;
-  text-align: center;
-}
-#services .services-list .service-item {
-  margin-bottom: 3rem;
-  padding: 0 50px;
-}
-#services .services-list .service-item p {
-  color: rgba(242, 242, 242, 0.5);
-}
-#services .services-list .icon {
-  display: inline-block;
-  margin-bottom: 1.5rem;
-}
-#services .services-list .icon i {
-  font-size: 5.4rem;
-  color: #f9a828;
-}
-#services .services-list .h05 {
-  font-size: 1.7rem;
-  line-height: 1.765;
-  color: #FFFFFF;
-  margin-bottom: 3rem;
-}
-
-/* ------------------------------------------------------------------- 
- * responsive:
- * services
- * ------------------------------------------------------------------- */
-@media only screen and (max-width: 1024px) {
-  #services .services-list .service-item {
-    padding: 0 40px;
-  }
-}
-@media only screen and (max-width: 900px) {
-  #services .services-list .service-item {
-    padding: 0 30px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  #services {
-    padding: 12rem 0 12rem;
-  }
-  #services .services-content {
-    max-width: 550px;
-  }
-  #services .services-list .service-item {
-    padding: 0 15px;
-  }
-  #services .services-list .icon i {
-    font-size: 5.1rem;
-  }
-}
-@media only screen and (max-width: 600px) {
-  #services .services-list .service-item {
-    padding: 0 10px;
-  }
-  #services .services-list .icon i {
-    font-size: 5rem;
-  }
-}
-@media only screen and (max-width: 400px) {
-  #services .services-list .service-item {
-    padding: 0;
-  }
-}
-
-
-/* ===================================================================
- *  13. portfolio - (_layout.scss)
- *
- * ------------------------------------------------------------------- */
-#portfolio {
-  background: #FFFFFF;
-  min-height: 800px;
-  position: relative;
-  padding: 0;
-}
-#portfolio .intro-wrap {
-  padding: 15rem 0 21rem;
-  background: #111111;
-}
 #portfolio .section-intro h3 {
   color: rgba(242, 242, 242, 0.5);
 }
@@ -2023,23 +1929,119 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   color: rgba(242, 242, 242, 0.4);
 }
 #portfolio .portfolio-content {
+  text-align: center;
+  max-width: 1040px;
+}
+#portfolio .portfolio-list {
+  margin-top: 1.2rem;
+  text-align: center;
+}
+#portfolio .portfolio-list .portfolio-item {
+  margin-bottom: 3rem;
+  padding: 0 50px;
+}
+#portfolio .portfolio-list .portfolio-item p {
+  color: rgba(242, 242, 242, 0.5);
+}
+#portfolio .portfolio-list .icon {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+#portfolio .portfolio-list .icon i {
+  font-size: 5.4rem;
+  color: #f9a828;
+}
+#portfolio .portfolio-list .h05 {
+  font-size: 1.7rem;
+  line-height: 1.765;
+  color: #FFFFFF;
+  margin-bottom: 3rem;
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * portfolio
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width: 1024px) {
+  #portfolio .portfolio-list .portfolio-item {
+    padding: 0 40px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #portfolio .portfolio-list .portfolio-item {
+    padding: 0 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #portfolio {
+    padding: 12rem 0 12rem;
+  }
+  #portfolio .portfolio-content {
+    max-width: 550px;
+  }
+  #portfolio .portfolio-list .portfolio-item {
+    padding: 0 15px;
+  }
+  #portfolio .portfolio-list .icon i {
+    font-size: 5.1rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #portfolio .portfolio-list .portfolio-item {
+    padding: 0 10px;
+  }
+  #portfolio .portfolio-list .icon i {
+    font-size: 5rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #portfolio .portfolio-list .portfolio-item {
+    padding: 0;
+  }
+}
+
+
+/* ===================================================================
+ *  13. presentation - (_layout.scss)
+ * original-portfolio -> edited-presentation
+ * ------------------------------------------------------------------- */
+#presentation {
+  background: #FFFFFF;
+  min-height: 800px;
+  position: relative;
+  padding: 0;
+}
+#presentation .intro-wrap {
+  padding: 15rem 0 21rem;
+  background: #111111;
+}
+#presentation .section-intro h3 {
+  color: rgba(242, 242, 242, 0.5);
+}
+#presentation .section-intro h1 {
+  color: #FFFFFF;
+}
+#presentation .section-intro .lead {
+  color: rgba(242, 242, 242, 0.4);
+}
+#presentation .presentation-content {
   margin-top: -22.2rem;
 }
-#portfolio .bricks-wrapper:before, 
-#portfolio .bricks-wrapper:after {
+#presentation .bricks-wrapper:before, 
+#presentation .bricks-wrapper:after {
   content: "";
   display: table;
 }
-#portfolio .bricks-wrapper:after {
+#presentation .bricks-wrapper:after {
   clear: both;
 }
-#portfolio .bricks-wrapper .brick {
+#presentation .bricks-wrapper .brick {
   float: left;
   width: 50%;
   padding: 0;
   margin: 0;
 }
-#portfolio .bricks-wrapper .brick:nth-child(2n+1) {
+#presentation .bricks-wrapper .brick:nth-child(2n+1) {
   clear: both;
 }
 
@@ -2114,12 +2116,12 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   margin-right: 6rem;
   z-index: 3;
 }
-.bricks-wrapper .item-wrap .item-text .folio-title {
+.bricks-wrapper .item-wrap .item-text .presentation-title {
   color: #FFFFFF;
   font-size: 2.2rem;
   line-height: 1.364;
 }
-.bricks-wrapper .item-wrap .item-text .folio-types {
+.bricks-wrapper .item-wrap .item-text .presentation-types {
   font-family: "montserrat-regular", sans-serif;
   font-size: 1.1rem;
   line-height: 1.5rem;
@@ -2239,20 +2241,20 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 
 /* ------------------------------------------------------------------- 
  * responsive:
- * portfolio
+ * presentation
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 768px) {
-  #portfolio .intro-wrap {
+  #presentation .intro-wrap {
     padding: 12rem 0 21rem;
   }
 }
 @media only screen and (max-width: 600px) {
-  #portfolio .bricks-wrapper .brick {
+  #presentation .bricks-wrapper .brick {
     float: none;
     width: 100%;
   }
 
-  .bricks-wrapper .item-wrap .item-text .folio-title {
+  .bricks-wrapper .item-wrap .item-text .presentation-title {
     font-size: 2rem;
     line-height: 1.5;
   }
